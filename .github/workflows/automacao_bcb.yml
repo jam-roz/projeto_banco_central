@@ -1,34 +1,30 @@
 name: Atualizar Dados BCB Diariamente
 
-
 on:
   schedule:
-    # Roda todos os dias às 06:00 da manhã (horário UTC, logo 03:00 no Brasil)
     - cron: '0 6 * * *'
-  workflow_dispatch: # Cria um botão para rodar manualmente 
-
+  workflow_dispatch:
 
 jobs:
   executar_script:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
 
     steps:
       - name: Clonar o repositório
         uses: actions/checkout@v3
 
-      - name: Configurar o Python
+      - name: Configurar o Python 3.12
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.12' 
 
-      - name: Instalar bibliotecas do requirements.txt
+      - name: Instalar bibliotecas
         run: pip install -r requirements.txt
-
-      - name: LISTAR ARQUIVOS (Debug)
-        run: ls -R  # Listar todos os arquivos e pastas  
 
       - name: Rodar o script de extração (ETL)
         env:
-          # Puxa a senha do cofre do GitHub e entrega para o script
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: python scripts/etl_python.py
+       
+        run: |
+          cd scripts
+          python etl_python.py
