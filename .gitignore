@@ -1,0 +1,7 @@
+# Ignorar arquivos CSV e bases de dados locais
+data/
+
+# Ignorar bibliotecas do ambiente virtual Python
+.venv/
+
+.env
