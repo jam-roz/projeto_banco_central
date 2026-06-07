@@ -24,6 +24,9 @@ jobs:
       - name: Instalar bibliotecas do requirements.txt
         run: pip install -r requirements.txt
 
+      - name: LISTAR ARQUIVOS (Debug)
+        run: ls -R  # Listar todos os arquivos e pastas  
+
       - name: Rodar o script de extração (ETL)
         env:
           # Puxa a senha do cofre do GitHub e entrega para o script
