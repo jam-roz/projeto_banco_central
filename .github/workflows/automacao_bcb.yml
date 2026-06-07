@@ -28,4 +28,4 @@ jobs:
         env:
           # Puxa a senha do cofre do GitHub e entrega para o script
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: python etl_python.py
+        run: python scripts/etl_python.py
