@@ -4,7 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-> **Resumo:** Este projeto é um pipeline de Engenharia de Dados automatizado, desenvolvido para extrair, tratar e persistir indicadores macroeconômicos da API do Banco Central do Brasil (BCB). A solução elimina a coleta manual de dados, garantindo um banco de dados atualizado diariamente para suporte a dashboards de Business Intelligence.
+> **Resumo:** Este projeto é um pipeline de Engenharia de Dados automatizado, desenvolvido para extrair, tratar e persistir indicadores macroeconômicos da API do Banco Central do Brasil (BCB), além de possuir a visualização e análise de dados utilizando PowerBI. A solução elimina a coleta manual de dados, garantindo um banco de dados atualizado diariamente para suporte a dashboards de Business Intelligence.
 
 ## 🎥 Preview do Dashboard
 
