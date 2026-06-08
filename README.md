@@ -8,6 +8,7 @@
 
 ## 🎥 Preview do Dashboard
 
+https://github.com/user-attachments/assets/d0d8e441-4924-4a3a-88e1-fe4d7bcf6597
 
 ## 📌 O Problema de Negócio
 A análise de indicadores econômicos (como Dólar, IPCA e Selic) exige dados precisos e atualizados. A coleta manual em sites de órgãos públicos é uma tarefa repetitiva, propensa a erros e ineficiente para análises temporais longas. Este projeto soluciona essa defasagem criando um fluxo de dados resiliente (ETL) que garante que o dashboard de BI esteja sempre refletindo a realidade econômica atual sem intervenção humana.
@@ -31,10 +32,20 @@ O projeto foi construído sobre uma arquitetura de nuvem e automação:
 * **Segurança por Design:** Credenciais de banco de dados isoladas do código-fonte através do gerenciamento de segredos do GitHub.
 * **Escalabilidade:** Estrutura pronta para inclusão de novas séries temporais do BCB apenas adicionando o código da série ao mapeamento do script.
 
-## 📊 Principais Insights de Negócio
-* **Correlação de Indicadores:** O dashboard permite visualizar a correlação direta entre a variação da Taxa Selic e o comportamento do Dólar ao longo do tempo.
-* **Volatilidade Econômica:** A visualização de séries temporais longas permite identificar picos de volatilidade causados por eventos macroeconômicos específicos.
-* **Qualidade da Informação:** A automatização remove o viés de erros de digitação humanos que ocorriam anteriormente na coleta manual.
+## 📊 Resultados e Insights Analíticos
+* ### 1. O "Efeito Tesoura" nas Margens (Dólar vs. IPCA)
+
+- **O Cenário:** Foi identificada uma assimetria entre o custo de aquisição e o custo de vida. No período analisado (Jan - Atual), o Dólar apresentou uma retração de 5% (caindo de R$ 5,44 para R$ 5,17), enquanto a inflação (IPCA) acelerou em 0,34 p.p. (de 0,33% para 0,67%).
+- **Impacto Operacional:** O custo de reposição de mercadorias importadas ou com insumos dolarizados ficou mais barato, enquanto o mercado interno sofre pressão inflacionária.
+- **Ação Recomendada:** Manutenção do preço final de venda para absorção de uma maior margem de lucro (Markup). Evitar o repasse da queda do dólar ao consumidor final permite um ganho de rentabilidade invisível frente à concorrência, que precisará reajustar preços devido à inflação interna.
+
+### 2. Estagnação de Demanda e Custo de Capital (Selic vs. Crédito PJ)
+
+- **O Cenário:** A taxa Selic manteve-se em patamares contracionistas (oscilando entre 14,15% e 14,90%). Ao analisar o Volume de Crédito (PJ) na visão Year-over-Year (YoY), houve um avanço nominal de R$ 295 Bi para R$ 314 Bi (crescimento de ~6,4%).
+- **Impacto Operacional:** Considerando a inflação do período, o crescimento real do crédito foi virtualmente nulo. O mercado não está em expansão, e o alto custo do dinheiro encarece as taxas de antecipação de recebíveis em plataformas de marketplace.
+- **Ação Recomendada:** * Foco absoluto em produtos "Curva A" (giro rápido) para evitar custo de capital parado em estoque.
+    - Estruturação de campanhas de incentivo para pagamentos à vista (PIX/Boleto), mitigando a corrosão do fluxo de caixa pelas taxas de antecipação de cartão de crédito.
+    - Esforços direcionados para retenção de clientes (aumento de LTV), dado que a captação de novos clientes em um mercado de crédito estagnado é mais custosa (CAC elevado).
 
 ## 📎 Créditos e Atribuições
 * **Fonte de Dados:** API do Banco Central do Brasil (SGS - Sistema Gerenciador de Séries Temporais).
