@@ -33,7 +33,10 @@ O projeto foi construído sobre uma arquitetura de nuvem e automação:
 * **Escalabilidade:** Estrutura pronta para inclusão de novas séries temporais do BCB apenas adicionando o código da série ao mapeamento do script.
 
 ## 📊 Resultados e Insights Analíticos
-* ### 1. O "Efeito Tesoura" nas Margens (Dólar vs. IPCA)
+Este dashboard foi construído para monitorar variáveis macroeconômicas e guiar decisões operacionais, de precificação e de estoque em operações de varejo e e-commerce.
+Abaixo, os principais cenários diagnosticados através do painel:
+
+### 1. O "Efeito Tesoura" nas Margens (Dólar vs. IPCA)
 
 - **O Cenário:** Foi identificada uma assimetria entre o custo de aquisição e o custo de vida. No período analisado (Jan - Atual), o Dólar apresentou uma retração de 5% (caindo de R$ 5,44 para R$ 5,17), enquanto a inflação (IPCA) acelerou em 0,34 p.p. (de 0,33% para 0,67%).
 - **Impacto Operacional:** O custo de reposição de mercadorias importadas ou com insumos dolarizados ficou mais barato, enquanto o mercado interno sofre pressão inflacionária.
