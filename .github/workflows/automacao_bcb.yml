@@ -16,7 +16,7 @@ jobs:
       - name: Configurar o Python 3.12
         uses: actions/setup-python@v4
         with:
-          python-version: '3.12' 
+          python-version: '3.12'
 
       - name: Instalar bibliotecas
         run: pip install -r requirements.txt
@@ -24,7 +24,5 @@ jobs:
       - name: Rodar o script de extração (ETL)
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
-       
-        run: |
-          cd scripts
-          python etl_python.py
+        
+        run: python etl_python.py
