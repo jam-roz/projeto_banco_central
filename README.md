@@ -8,7 +8,7 @@
 
 ## 🎥 Preview do Dashboard
 
-https://github.com/user-attachments/assets/d0d8e441-4924-4a3a-88e1-fe4d7bcf6597
+https://github.com/user-attachments/assets/d1ac2a6c-42d3-466b-8a5d-ded0e0980d18
 
 ## 📌 O Problema de Negócio
 A análise de indicadores econômicos (como Dólar, IPCA e Selic) exige dados precisos e atualizados. A coleta manual em sites de órgãos públicos é uma tarefa repetitiva, propensa a erros e ineficiente para análises temporais longas. Este projeto soluciona essa defasagem criando um fluxo de dados resiliente (ETL) que garante que o dashboard de BI esteja sempre refletindo a realidade econômica atual sem intervenção humana.
