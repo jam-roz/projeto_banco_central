@@ -1,4 +1,4 @@
-# 📈 Pipeline de Dados: Indicadores Econômicos (Banco Central do Brasil)
+# 📈 Pipeline e Análise de Dados: Indicadores Econômicos (Banco Central do Brasil)
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
