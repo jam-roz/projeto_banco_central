@@ -7,7 +7,7 @@
 > **Resumo:** Este projeto é um pipeline de Engenharia de Dados automatizado, desenvolvido para extrair, tratar e persistir indicadores macroeconômicos da API do Banco Central do Brasil (BCB). A solução elimina a coleta manual de dados, garantindo um banco de dados atualizado diariamente para suporte a dashboards de Business Intelligence.
 
 ## 🎥 Preview do Dashboard
-*(Insira aqui o link ou GIF do seu Dashboard no Power BI)*
+
 
 ## 📌 O Problema de Negócio
 A análise de indicadores econômicos (como Dólar, IPCA e Selic) exige dados precisos e atualizados. A coleta manual em sites de órgãos públicos é uma tarefa repetitiva, propensa a erros e ineficiente para análises temporais longas. Este projeto soluciona essa defasagem criando um fluxo de dados resiliente (ETL) que garante que o dashboard de BI esteja sempre refletindo a realidade econômica atual sem intervenção humana.
